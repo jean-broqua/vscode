@@ -1,0 +1,89 @@
+{
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // Theme
+  "material-icon-theme.activeIconPack": "nest",
+
+  // Formating
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.guides.bracketPairs": false,
+  "editor.guides.indentation": false,
+  "prettier.singleQuote": false,
+  // "editor.minimap.enabled": false,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.tabSize": 2,
+  "omnisharp.useEditorFormattingSettings": true,
+  "[csharp]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+
+  "workbench.editor.empty.hint": "hidden",
+  "editor.fontFamily": "JetBrains Mono",
+  "terminal.integrated.gpuAcceleration": "off",
+  "editor.fontSize": 13,
+  "editor.rulers": [80, 120],
+  "editor.renderLineHighlight": "gutter",
+  "editor.cursorSurroundingLines": 10,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "explorer.compactFolders": false,
+  "breadcrumbs.enabled": false,
+  "editor.lineNumbers": "relative",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.tree.enableStickyScroll": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.colorTheme": "Monokai Pro",
+  "git.confirmSync": false,
+  // "editor.autoClosingBrackets": "never",
+  // "editor.autoClosingQuotes": "never"
+
+  // Vim
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindings": [
+    // save
+    {
+      "before": ["<leader>", "w"],
+      "comands": ["workbench.actions.files.save"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<leader>", "g"],
+      "commands": ["workbench.action.focusNextGroup"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<leader>", "j"],
+      "commands": ["workbench.action.previousEditor"]
+    }
+  ],
+  "vim.leader": "<space>"
+}
