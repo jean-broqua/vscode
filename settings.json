@@ -9,11 +9,13 @@
   "editor.guides.indentation": false,
   "editor.scrollbar.vertical": "hidden",
   "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
   "editor.fontSize": 13,
   "editor.cursorSurroundingLines": 10,
   "editor.rulers": [80, 120],
   "editor.renderLineHighlight": "gutter",
   "editor.lineNumbers": "relative",
+  "editor.bracketPairColorization.enabled": false,
   "[csharp]": {
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-dotnettools.csharp"
@@ -21,10 +23,10 @@
 
   // Workbench
   "workbench.editor.empty.hint": "hidden",
-  "workbench.iconTheme": "Monokai Pro Icons",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
   "workbench.tree.enableStickyScroll": false,
-  "workbench.colorTheme": "Monokai Pro",
+  "workbench.colorTheme": "One Dark Pro Mix",
 
   // Terminal
   "terminal.integrated.gpuAcceleration": "off",
@@ -56,7 +58,21 @@
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<esc>"]
+    }
+  ],
   "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-k>"],
+      "after": ["{"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["}"]
+    },
     {
       "before": ["<leader>", "w"],
       "commands": [":w"]
@@ -92,7 +108,12 @@
     {
       "before": ["<leader>", "n"],
       "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.quickOpen"]
     }
   ],
   "vim.leader": "<space>"
 }
+
